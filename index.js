@@ -1,21 +1,14 @@
 
-buttons = document.querySelectorAll(".drum");
-
-document.addEventListener("keydown", function(event){
+$(document).keydown(function(event){
     const key = event.key;
     playDrum(key);
     buttonAnimation(key);
-});
+})
 
-
-
-for (var i = 0; i < buttons.length; i++) {
-    document.querySelectorAll(".drum")[i].addEventListener("click", function(){
-        playDrum(this.id);
-        buttonAnimation(this.id);
-    });
-}
-
+$("button").click(function(event){
+    playDrum(this.id);
+    buttonAnimation(this.id);
+})
 
 
 function playDrum(id){
@@ -54,10 +47,10 @@ function playDrum(id){
 
 
 function buttonAnimation(key){
-   var button = document.querySelector("."+key)
-   button.classList.toggle("pressed");
-   setTimeout(function() {
-    button.classList.toggle("pressed");
-   }, 100)
+    var button = $("."+key);
+    button.toggleClass("pressed");
+    setTimeout(function(){
+        button.toggleClass("pressed");
+    }, 100);
 
 }
