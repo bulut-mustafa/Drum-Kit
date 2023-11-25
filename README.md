@@ -21,8 +21,3 @@ This project is a virtual drum kit that can be played using the keyboard. It is 
 
 This project uses jQuery, which is loaded via a CDN in the HTML file.
 
-
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
