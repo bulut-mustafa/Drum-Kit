@@ -14,7 +14,7 @@ This project is a virtual drum kit that can be played using the keyboard. It is 
 
 ## How to Use
 
-1. Open `https://bulut-mustafa.github.io/Drum-Kit/` in your browser.
+1. Open https://bulut-mustafa.github.io/Drum-Kit/ in your browser.
 2. Click to buttons or the keys that correspond to the drum sounds (w, a, s, d, j, k, l).
 
 ## Dependencies
